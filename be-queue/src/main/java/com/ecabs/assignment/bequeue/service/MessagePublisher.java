@@ -10,6 +10,9 @@ import com.ecabs.assignment.bedblayer.dto.BookingDto;
 
 public interface MessagePublisher {
 
+     /**
+      * @param booking
+      */
      void sendMessage(BookingDto booking);
 
 

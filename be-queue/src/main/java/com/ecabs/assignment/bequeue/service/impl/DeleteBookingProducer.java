@@ -25,6 +25,9 @@ public class DeleteBookingProducer implements MessagePublisher {
     @Autowired
     DeleteBookingOutputStream deleteBookingOutputStream;
 
+    /**
+     * @param booking
+     */
     @Override
     public void sendMessage(BookingDto booking) {
         try {

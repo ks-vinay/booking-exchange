@@ -25,6 +25,9 @@ public class EditBookingProducer implements MessagePublisher {
     @Autowired
     EditBookingOutputStream editBookingOutputStream;
 
+    /**
+     * @param booking
+     */
     @Override
     public void sendMessage(BookingDto booking) {
         try {
